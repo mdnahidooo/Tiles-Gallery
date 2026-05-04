@@ -6,10 +6,11 @@ import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
 import NavLinks from "./NavLinks";
 import { Avatar, Button } from "@heroui/react";
 import { authClient } from "@/lib/auth-client";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
     const [open, setOpen] = useState(false);
-
+    const router = useRouter();
 
     const { data: session } = authClient.useSession();
     const userInfo = session?.user;
@@ -18,6 +19,7 @@ export default function Navbar() {
 
     const handleSignOut = async () => {
         await authClient.signOut();
+        router.push('/signin');
     };
 
     return (

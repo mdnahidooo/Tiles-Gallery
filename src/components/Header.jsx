@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <div className="px-4 md:px-6 lg:px-8">
-            <div className="relative h-[60vh] md:h-[70vh] lg:h-[70vh] w-full max-w-7xl mx-auto my-6 md:my-10 rounded-xl overflow-hidden shadow-2xl">
+        <div className="">
+            <div className="relative h-[60vh] md:h-[70vh] lg:h-[70vh] w-full  mx-auto mb-6 md:mb-10  overflow-hidden shadow-2xl">
 
                 {/* Background Image */}
                 <div className="absolute inset-0">

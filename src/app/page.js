@@ -8,8 +8,8 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div>
-      <MarqueeSection></MarqueeSection>
       <Header></Header>
+      <MarqueeSection></MarqueeSection>
       <TopTiles></TopTiles>
       {/* <MarqueeImage></MarqueeImage> */}
     </div>

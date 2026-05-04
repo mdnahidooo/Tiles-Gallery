@@ -74,7 +74,7 @@ const AllTilesPage = () => {
                 <div className="mb-10 flex justify-center">
                     <input
                         type="text"
-                        placeholder="Search by name, style, or tag..."
+                        placeholder="Search by title..."
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         className="w-full max-w-xl px-5 py-3 rounded-xl border border-[#e5e5d8] bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-[#E07A5F]"
