@@ -6,6 +6,13 @@ This project focuses on **UI/UX design, authentication, dynamic routing, and dat
 
 ---
 
+## 📸 Project Screenshot
+
+<img src="./public/assets/images/TilesGallery.png" alt="Project Screenshot" />
+
+
+---
+
 ## 🌐 Live URL
 
 👉 https://b13-a08-tiles-gallery.vercel.app/   
