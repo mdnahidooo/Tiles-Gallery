@@ -14,8 +14,8 @@ export default function Navbar() {
 
     const { data: session } = authClient.useSession();
     const userInfo = session?.user;
-    
 
+    console.log(userInfo);
 
     const handleSignOut = async () => {
         await authClient.signOut();
@@ -71,14 +71,14 @@ export default function Navbar() {
                         <>
                             {/* profile avatar use */}
                             <Link href="/my-profile" className="flex items-center gap-2">
-                                    <Avatar size="sm">
-                                        <Avatar.Image
-                                            alt={userInfo.name}
-                                            src={userInfo?.image}
-                                            referrerPolicy="no-referrer"
-                                        />
-                                        <Avatar.Fallback>{userInfo?.name.charAt(0)}</Avatar.Fallback>
-                                    </Avatar>
+                                <Avatar size="sm">
+                                    <Avatar.Image
+                                        alt={userInfo.name}
+                                        src={userInfo?.image}
+                                        referrerPolicy="no-referrer"
+                                    />
+                                    <Avatar.Fallback>{userInfo?.name.charAt(0)}</Avatar.Fallback>
+                                </Avatar>
                             </Link>
 
                             {/* logout btn*/}
